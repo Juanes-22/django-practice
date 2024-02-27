@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "markdown",
     "django.contrib.sites",
     "django.contrib.sitemaps",
+    "django.contrib.postgres"
 ]
 
 MIDDLEWARE = [
@@ -81,8 +82,10 @@ WSGI_APPLICATION = 'p01_sitioweb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "blog_test",
+        "USER": "blog",
+        "PASSWORD": "2201"
     }
 }
 
