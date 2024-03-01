@@ -132,3 +132,6 @@ EMAIL_HOST_USER = "juanesgarciamar@gmail.com"
 EMAIL_HOST_PASSWORD = "vqyr bmgz ycnn qyno"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+MEDIA_URL = "media/"
+MEDIA_ROOT = BASE_DIR / "media"
